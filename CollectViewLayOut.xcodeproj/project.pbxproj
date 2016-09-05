@@ -15,6 +15,9 @@
 		041338021C76F1CF0057D0DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041338001C76F1CF0057D0DE /* LaunchScreen.storyboard */; };
 		0413380D1C76F1CF0057D0DE /* CollectViewLayOutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0413380C1C76F1CF0057D0DE /* CollectViewLayOutTests.m */; };
 		041338181C76F1CF0057D0DE /* CollectViewLayOutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041338171C76F1CF0057D0DE /* CollectViewLayOutUITests.m */; };
+		041338271C76F5550057D0DE /* XZMFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 041338261C76F5550057D0DE /* XZMFlowLayout.m */; };
+		04F0EA3D1C7AE8660053B4B1 /* XZMcollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F0EA3B1C7AE8660053B4B1 /* XZMcollectionViewCell.m */; };
+		04F0EA3E1C7AE8660053B4B1 /* XZMcollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F0EA3C1C7AE8660053B4B1 /* XZMcollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		041338131C76F1CF0057D0DE /* CollectViewLayOutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectViewLayOutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041338171C76F1CF0057D0DE /* CollectViewLayOutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectViewLayOutUITests.m; sourceTree = "<group>"; };
 		041338191C76F1CF0057D0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041338251C76F5550057D0DE /* XZMFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMFlowLayout.h; sourceTree = "<group>"; };
+		041338261C76F5550057D0DE /* XZMFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMFlowLayout.m; sourceTree = "<group>"; };
+		04F0EA3A1C7AE8660053B4B1 /* XZMcollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZMcollectionViewCell.h; sourceTree = "<group>"; };
+		04F0EA3B1C7AE8660053B4B1 /* XZMcollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZMcollectionViewCell.m; sourceTree = "<group>"; };
+		04F0EA3C1C7AE8660053B4B1 /* XZMcollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XZMcollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				041337F61C76F1CF0057D0DE /* AppDelegate.m */,
 				041337F81C76F1CF0057D0DE /* ViewController.h */,
 				041337F91C76F1CF0057D0DE /* ViewController.m */,
+				041338251C76F5550057D0DE /* XZMFlowLayout.h */,
+				041338261C76F5550057D0DE /* XZMFlowLayout.m */,
+				04F0EA3A1C7AE8660053B4B1 /* XZMcollectionViewCell.h */,
+				04F0EA3B1C7AE8660053B4B1 /* XZMcollectionViewCell.m */,
+				04F0EA3C1C7AE8660053B4B1 /* XZMcollectionViewCell.xib */,
 				041337FB1C76F1CF0057D0DE /* Main.storyboard */,
 				041337FE1C76F1CF0057D0DE /* Assets.xcassets */,
 				041338001C76F1CF0057D0DE /* LaunchScreen.storyboard */,
@@ -243,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F0EA3E1C7AE8660053B4B1 /* XZMcollectionViewCell.xib in Resources */,
 				041338021C76F1CF0057D0DE /* LaunchScreen.storyboard in Resources */,
 				041337FF1C76F1CF0057D0DE /* Assets.xcassets in Resources */,
 				041337FD1C76F1CF0057D0DE /* Main.storyboard in Resources */,
@@ -273,6 +287,8 @@
 				041337FA1C76F1CF0057D0DE /* ViewController.m in Sources */,
 				041337F71C76F1CF0057D0DE /* AppDelegate.m in Sources */,
 				041337F41C76F1CF0057D0DE /* main.m in Sources */,
+				041338271C76F5550057D0DE /* XZMFlowLayout.m in Sources */,
+				04F0EA3D1C7AE8660053B4B1 /* XZMcollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +429,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: XinYu Shen (C87S8827QR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XinYu Shen (C87S8827QR)";
 				INFOPLIST_FILE = CollectViewLayOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ypwl.CollectViewLayOut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "825f6a21-750a-4301-bf43-ab2fe1a750d3";
 			};
 			name = Debug;
 		};
@@ -424,10 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: XinYu Shen (C87S8827QR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XinYu Shen (C87S8827QR)";
 				INFOPLIST_FILE = CollectViewLayOut/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ypwl.CollectViewLayOut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "825f6a21-750a-4301-bf43-ab2fe1a750d3";
 			};
 			name = Release;
 		};
@@ -498,6 +520,7 @@
 				0413381E1C76F1CF0057D0DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0413381F1C76F1CF0057D0DE /* Build configuration list for PBXNativeTarget "CollectViewLayOutTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +529,7 @@
 				041338211C76F1CF0057D0DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041338221C76F1CF0057D0DE /* Build configuration list for PBXNativeTarget "CollectViewLayOutUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +538,7 @@
 				041338241C76F1CF0057D0DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
